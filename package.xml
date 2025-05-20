@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>TurtleBot3-VK-Controller</name>
+  <name>turtleBot3_vk_controller</name>
   <version>0.0.0</version>
-  <description>The TurtleBot3-VK-Controller package</description>
+  <description>The turtleBot3_vk_controller package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
