@@ -35,7 +35,7 @@ def laser_callback(msg):
         obstacle_detected = False
         return
 
-    center_angle = 0.0 if movement_direction == 1 else math.pi
+    center_angle = 0.0 if movement_direction == -1 else math.pi
     angle_tolerance = math.radians(10)
 
     angles = [msg.angle_min + i * msg.angle_increment for i in range(len(msg.ranges))]
@@ -73,7 +73,7 @@ def move_linear():
     move_cmd = Twist()
     current_speed = 0.0
 
-    movement_direction = -1 if linear_distance > 0 else 1
+    movement_direction = 1 if linear_distance > 0 else -1
     abs_distance = abs(linear_distance)
     abs_speed = abs(linear_speed)
     linear_time = abs_distance / abs_speed
