@@ -73,7 +73,7 @@ def move_linear():
     move_cmd = Twist()
     current_speed = 0.0
 
-    movement_direction = 1 if linear_distance > 0 else -1
+    movement_direction = -1 if linear_distance > 0 else 1
     abs_distance = abs(linear_distance)
     abs_speed = abs(linear_speed)
     linear_time = abs_distance / abs_speed
